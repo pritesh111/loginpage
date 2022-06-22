@@ -121,6 +121,16 @@ input:focus {
   border-style: none;
   color: white;
   font-weight: 600;
+  font-size: 16px;
+}
+
+.logbtn{
+  background-color: green;
+  color: beige;
+}
+.logbtn:hover{
+  background-color: #9fd3c7;
+
 }
 
 .btn2:hover{
@@ -131,6 +141,29 @@ input:focus {
   border-bottom: 2px solid rgb(91, 243, 131);
 }
 
+a:link{
+  color: beige;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited{
+  color: beige;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active{
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+
+}
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
@@ -155,28 +188,6 @@ input:focus {
   margin-top: 30px !important;
 }
 
-/* Show login form on button click */
-
-$('.loginBtn').click(function(){
-  $('.login').show();
-  $('.signUp').hide();
-  /* border bottom on button click */
-  $('.loginBtn').css({'border-bottom' : '2px solid #ff4141'});
-  /* remove border after click */
-  $('.signUpBtn').css({'border-style' : 'none'});
-});
-
-
-/* Show sign Up form on button click */
-
-$('.signUpBtn').click(function(){
-  $('.login').hide();
-  $('.signUp').show();
-  /* border bottom on button click */
-  $('.signUpBtn').css({'border-bottom' : '2px solid #ff4141'});
-   /* remove border after click */
-   $('.loginBtn').css({'border-style' : 'none'});
-});
 
 *{
   padding: 0;
@@ -274,6 +285,14 @@ $('.signUpBtn').click(function(){
   color: beige;
 }
 
+.logo{
+  border-radius: 5px;
+  height: 100px;
+  width: 120px;
+  display: block;
+
+
+}
 
 .login-form input{
   width: 100%;
@@ -290,4 +309,6 @@ $('.signUpBtn').click(function(){
 
 .setup{
   color: beige;
+  text-align: left;
+  font-size: 14px;
 }
